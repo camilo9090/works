@@ -33,8 +33,8 @@ body {
 }
 .contenedor{
 
-    width: 120rem;
-    margin: 0 auto 0 auto;/
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
 }
 .nav-bg{
     background-color: var(--secundario);
@@ -43,11 +43,21 @@ body {
    
 }
 .navegacion-principal  {
-    display: flex;   
-    justify-content: space-between;
+    display: flex; 
+    flex-direction: column;   
+    align-items: center;  
     
 }
+@media (min-width:768px){ 
 
+    .navegacion-principal{
+       
+        flex-direction: row; 
+        justify-content: space-between;
+             
+    }
+    
+} 
 .navegacion-principal a {
     color: var(--blanco);  
     text-decoration: none; 
@@ -66,12 +76,4 @@ background-color: var(--primario);
 
     }
 }
-@media (min-width:768px){   
-
-
-    h1{
-
-        
-    }
-    
-}           
+          
