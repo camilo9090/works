@@ -38,16 +38,25 @@ body {
 }
 .nav-bg{
     background-color: var(--secundario);
-    padding: 1rem; 
+    
    
    
 }
 .navegacion-principal  {
     display: flex;   
     justify-content: space-between;
+    
 }
 
 .navegacion-principal a {
     color: var(--blanco);  
     text-decoration: none; 
+    font-size: 2rem;
+    padding: 1rem; 
+}
+.navegacion-principal a:hover{
+
+color: var(--negro);
+background-color: var(--primario);
+
 }
