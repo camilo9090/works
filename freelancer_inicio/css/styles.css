@@ -2,7 +2,7 @@
     --blanco: #ffffff;
     --negro: #000000;
     --primario: #3c3ac7;
-    --secundario: #d9c01c;
+    --secundario: #c0a704;
     --gris: #757575;
 
 }
@@ -21,20 +21,32 @@ body {
 
     text-align: center;
     font-size: 3.8rem;
-    
+
 
 
 }
-
-
-
-
-
-
-
-
 .titulo span {
 
     font-size: 2rem;
 
+
+}
+.contenedor{
+
+    width: 120rem;
+    margin: 0 auto 0 auto;/
+}
+.nav-bg{
+    background-color: var(--secundario);
+    padding: 1rem; 
+   
+   
+}
+.navegacion-principal  {
+    
+}
+
+.navegacion-principal a {
+    color: var(--blanco);  
+    text-decoration: none; 
 }
