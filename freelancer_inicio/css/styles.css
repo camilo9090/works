@@ -69,11 +69,11 @@ body {
 color: var(--negro);
 background-color: var(--primario);
 
-}
+}        
 
-@media (min-width:480px){
-    h1{
+.hero{
 
-    }
+ background-image: url(../images/hero.jpg);
+ background-repeat: no-repeat;  
+ background-size: cover; 
 }
-          
