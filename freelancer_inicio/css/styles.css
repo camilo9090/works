@@ -1,3 +1,12 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #000000;
+    --primario: #3c3ac7;
+    --secundario: #d9c01c;
+    --gris: #757575;
+
+}
+
 html {
 
     font-size: 62.5%;
@@ -5,16 +14,27 @@ html {
 
 body {
     font-size: 16px;
+    font-family: "Oswald", sans-serif;
 }
 
-h1 {
+.titulo {
 
     text-align: center;
     font-size: 3.8rem;
+    
+
 
 }
 
-span {
+
+
+
+
+
+
+
+.titulo span {
 
     font-size: 2rem;
+
 }
