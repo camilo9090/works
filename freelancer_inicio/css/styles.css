@@ -24,7 +24,9 @@ h3 {
     font-size: 1.8rem;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
 
     text-align: center;
 }
@@ -63,10 +65,29 @@ body {
     margin: 0 auto 0 auto;
 }
 
-.nav-bg {
+.boton {
+
     background-color: var(--secundario);
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    font: size 2rem; 
+    text-transform: uppercase;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
 
+@media (min-width:768px){
+    .boton{
 
+        width: auto;
+    }
+}
+.nav-bg {
+
+    background-color: var(--secundario);
 
 }
 
