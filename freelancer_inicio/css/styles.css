@@ -7,7 +7,7 @@
 
 }
 
-
+/* Tipografia */
 h1 {
 
     font-size: 3.8rem;
@@ -30,7 +30,7 @@ h3 {
 
     text-align: center;
 }
-
+/* Globales */
 html {
 
     font-size: 62.5%;
@@ -48,15 +48,6 @@ html {
 body {
     font-size: 16px;
     font-family: "Oswald", sans-serif;
-}
-
-
-
-.titulo span {
-
-    font-size: 2rem;
-
-
 }
 
 .contenedor {
@@ -78,13 +69,23 @@ body {
     width: 90%;
     text-align: center;
 }
-
+/* vuelve a acomodar el boton cuando se llegue a este tamaño */
 @media (min-width:768px){
     .boton{
 
         width: auto;
     }
 }
+
+/* Tiutlos */
+
+.titulo span {
+
+    font-size: 2rem;
+
+
+}
+/* Navegacion principal */
 .nav-bg {
 
     background-color: var(--secundario);
@@ -93,11 +94,12 @@ body {
 
 .navegacion-principal {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;/* distribuye la navegacion principal */
     align-items: center;
 
 }
-
+/* condicion que dicta que si la pantalla esta a mas de 768 
+acomo el texto de mejor manera*/
 @media (min-width:768px) {
 
     .navegacion-principal {
@@ -108,21 +110,21 @@ body {
     }
 
 }
-
+/* color del texto y ademas mejora el grosor de la barra */
 .navegacion-principal a {
     color: var(--blanco);
     text-decoration: none;
     font-size: 2rem;
     padding: 1rem;
 }
-
+/* evento que cambia el color del url al pasar el raton por este */
 .navegacion-principal a:hover {
 
     color: var(--negro);
     background-color: var(--primario);
 
 }
-
+/*  hero */
 .hero {
 
     background-image: url(../images/hero.jpg);
@@ -133,7 +135,7 @@ body {
 
 
 }
-
+/* centra el contenido dentro hero */
 .content-hero {
 
     position: absolute;
