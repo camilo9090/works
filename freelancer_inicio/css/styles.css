@@ -40,8 +40,7 @@ body {
 /* centra contenido */
 
 .contenedor {
-    max-width: 90rem;
-    /* <-----era 120rem */
+    max-width: 120rem;/* <-----era 120rem */
     margin: 0 auto;
 }
 
@@ -201,6 +200,7 @@ acomo el texto de mejor manera*/
         /* este codigo me crea las columnas de mis servicios */
             display: grid;
             grid-template-columns: repeat(4,1fr);
+            column-gap: 2rem;/* separacion de las columnas */
             
           /*   grid: 200px 800px/300px 300px;
          lo mismo pero corto*/
