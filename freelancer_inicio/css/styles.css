@@ -194,3 +194,16 @@ acomo el texto de mejor manera*/
     display: flex;
     align-items: flex-end;
 }
+/* servicios */
+
+@media (min-width:768px){
+    .servicios{
+        /* este codigo me crea las columnas de mis servicios */
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            
+          /*   grid: 200px 800px/300px 300px;
+         lo mismo pero corto*/
+        }
+    
+}
