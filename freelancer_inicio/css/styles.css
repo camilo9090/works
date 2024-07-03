@@ -65,7 +65,7 @@ body {
 .navegacion-principal a {
     color: var(--blanco);  
     text-decoration: none; 
-    font-size: 2rem;
+    font-size: 2rem;   
     padding: 1rem; 
 }
 .navegacion-principal a:hover{
@@ -80,6 +80,18 @@ background-color: var(--primario);
  background-image: url(../images/hero.jpg);
  background-repeat: no-repeat;  
  background-size: cover; 
- height: 410px;
- padding: 20px;
+ height: 450px;
+ position: relative;
+
+
 }
+
+.content-hero{
+
+    position: absolute;
+    background-color: #00000081;
+    width: 100%;
+    height: 100%;
+    
+}
+
