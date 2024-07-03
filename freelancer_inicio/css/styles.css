@@ -4,7 +4,52 @@
     --primario: #3c3ac7;
     --secundario: #c0a704;
     --gris: #757575;
+    --grisClaro:#DFE9F3;
 
+}
+/* Globales */
+html {
+
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    /* esta linea crea un degrado en nuestro body */
+    background-image: linear-gradient(to top,var(--grisClaro) 0%,var(--blanco) 100%);
+}
+/* centra contenido */
+
+.contenedor {
+    max-width: 90rem;/* <-----era 120rem */
+    margin: 0 auto;
+}
+
+.boton {
+
+    background-color: var(--secundario);
+    color: var(--blanco);    
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font: size 2rem; 
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+/* vuelve a acomodar el boton cuando se llegue a este tamaño */
+@media (min-width:768px){
+    .boton{
+
+        width: auto;
+    }
 }
 
 /* Tipografia */
@@ -24,58 +69,13 @@ h3 {
     font-size: 1.8rem;
 }
 
-h1,
-h2,
-h3 {
+h1,h2,h3 {
 
     text-align: center;
 }
-/* Globales */
-html {
-
-    font-size: 62.5%;
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
 
 
 
-body {
-    font-size: 16px;
-    font-family: "Oswald", sans-serif;
-}
-
-.contenedor {
-
-    max-width: 120rem;
-    margin: 0 auto 0 auto;
-}
-
-.boton {
-
-    background-color: var(--secundario);
-    color: var(--blanco);
-    text-decoration: none;
-    padding: 1rem 3rem;
-    margin-top: 2rem;
-    font: size 2rem; 
-    text-transform: uppercase;
-    border-radius: .5rem;
-    width: 90%;
-    text-align: center;
-}
-/* vuelve a acomodar el boton cuando se llegue a este tamaño */
-@media (min-width:768px){
-    .boton{
-
-        width: auto;
-    }
-}
 
 /* Tiutlos */
 
@@ -95,7 +95,7 @@ body {
 .navegacion-principal {
     display: flex;
     flex-direction: column;/* distribuye la navegacion principal */
-    align-items: center;
+   
 
 }
 /* condicion que dicta que si la pantalla esta a mas de 768 
@@ -112,9 +112,13 @@ acomo el texto de mejor manera*/
 }
 /* color del texto y ademas mejora el grosor de la barra */
 .navegacion-principal a {
+
+    display: block;
+    text-align: center;
     color: var(--blanco);
     text-decoration: none;
     font-size: 2rem;
+    font-weight: 700;
     padding: 1rem;
 }
 /* evento que cambia el color del url al pasar el raton por este */
@@ -132,6 +136,10 @@ acomo el texto de mejor manera*/
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem;
+    
+    
+
 
 
 }
@@ -142,6 +150,7 @@ acomo el texto de mejor manera*/
     background-color: #00000081;
     width: 100%;
     height: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,4 +163,9 @@ acomo el texto de mejor manera*/
 
     color: var(--blanco);
 
+}
+.content-hero .ubicacion{
+
+    display: flex;
+    align-items: flex-end;
 }
