@@ -40,7 +40,7 @@ body {
 /* centra contenido */
 
 .contenedor {
-    max-width: 120rem;
+    max-width: 90rem;
     /* <-----era 120rem */
     margin: 0 auto;
 }
@@ -239,4 +239,27 @@ acomo el texto de mejor manera*/
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+/* Contacto */
+.formulario{
+
+    background-color: var(--gris);
+    width: min(60rem,100%);/* Utiliza el valor mas pequenio y acorta el espacio del formualrio */
+    margin: 0 auto;/* se usa cuando este display block y no flex */
+    padding: 2rem;
+    border-radius: 1rem;
+}
+/* este codigo elimina el borde del formulario */
+.formulario fieldset{
+
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
 }
