@@ -30,7 +30,7 @@ body {
 
 .sombra {
 
-   
+
     box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
     background-color: var(--blanco);
     padding: 2rem;
@@ -40,7 +40,8 @@ body {
 /* centra contenido */
 
 .contenedor {
-    max-width: 120rem;/* <-----era 120rem */
+    max-width: 120rem;
+    /* <-----era 120rem */
     margin: 0 auto;
 }
 
@@ -193,17 +194,49 @@ acomo el texto de mejor manera*/
     display: flex;
     align-items: flex-end;
 }
+
 /* servicios */
 
-@media (min-width:768px){
-    .servicios{
+@media (min-width:768px) {
+    .servicios {
         /* este codigo me crea las columnas de mis servicios */
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            column-gap: 2rem;/* separacion de las columnas */
-            
-          /*   grid: 200px 800px/300px 300px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+        /* separacion de las columnas */
+
+        /*   grid: 200px 800px/300px 300px;
          lo mismo pero corto*/
-        }
-    
+    }
+
+}
+/* centra el contenido de servicios y lo pone en columnas */
+.servicio {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.servicio h3 {
+
+    color: var(--secundario);
+    font-weight: normal;
+    text-align: center;
+}
+
+.servicio p{
+    line-height: 2
+}
+
+/* se le da un grozor a los iconos y se les pone el circulo azul */
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
