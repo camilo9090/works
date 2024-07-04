@@ -305,7 +305,26 @@ acomo el texto de mejor manera*/
     color: var(--primario);
 }
 
-.contenedor-campos {}
+@media (min-width:768px) {
+
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 2rem;
+
+    }
+
+}
+
+/* este codigo permite acomodar el input text del correo */
+.campo:nth-child(3),
+.campo:nth-child(4) {
+
+    grid-column: 1/3;
+
+}
+
 
 .campo {
 
@@ -314,6 +333,7 @@ acomo el texto de mejor manera*/
 
 }
 
+/* este codigo agrega margen a los label y cambia su color */
 .campo label {
 
 
@@ -321,9 +341,15 @@ acomo el texto de mejor manera*/
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
+    flex-direction: row;
 
 }
 
+.campo textarea {
+    height: 20rem;
+}
+
+/* este codigo organiza los input tex dandole relleno y hasta donde van a llegar */
 .input-text {
 
     width: 100%;
@@ -333,7 +359,8 @@ acomo el texto de mejor manera*/
 
 }
 
-.enviar .boton {
+/* footer */
+.footer {
 
-    width: 100%;
+    text-align: center;
 }
