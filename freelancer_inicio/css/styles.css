@@ -13,6 +13,17 @@ html {
 
     font-size: 62.5%;
     box-sizing: border-box;
+    /* este codigo activa el scroll en todo el html */
+    scroll-snap-type: y mandatory;
+}
+
+/* este codigo detiene el scroll en la zona de servicios */
+.servicios,
+.navegacion-principal,
+.formulario {
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 *,
