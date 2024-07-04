@@ -57,6 +57,12 @@ body {
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
+}
+
+/* este codigo permite poner un puntero cuando se pasa por un boton */
+.boton:hover {
+    cursor: pointer;
 }
 
 /* vuelve a acomodar el boton cuando se llegue a este tamaño */
@@ -102,6 +108,36 @@ h3 {
 
 
 }
+
+/* Utilidades */
+.wt-100 {
+
+    width: 100%;
+}
+
+@media (min-width:768px) {
+
+    .wt-100 {
+
+        width: auto;
+    }
+
+}
+
+
+
+
+.flex {
+    display: flex;
+
+}
+
+.alinear-derecha {
+
+    justify-content: right;
+
+}
+
 
 /* Navegacion principal */
 .nav-bg {
@@ -210,6 +246,7 @@ acomo el texto de mejor manera*/
     }
 
 }
+
 /* centra el contenido de servicios y lo pone en columnas */
 .servicio {
 
@@ -226,7 +263,7 @@ acomo el texto de mejor manera*/
     text-align: center;
 }
 
-.servicio p{
+.servicio p {
     line-height: 2
 }
 
@@ -240,26 +277,63 @@ acomo el texto de mejor manera*/
     justify-content: space-evenly;
     align-items: center;
 }
+
 /* Contacto */
-.formulario{
+.formulario {
 
     background-color: var(--gris);
-    width: min(60rem,100%);/* Utiliza el valor mas pequenio y acorta el espacio del formualrio */
-    margin: 0 auto;/* se usa cuando este display block y no flex */
+    width: min(60rem, 100%);
+    /* Utiliza el valor mas pequenio y acorta el espacio del formualrio */
+    margin: 0 auto;
+    /* se usa cuando este display block y no flex */
     padding: 2rem;
     border-radius: 1rem;
 }
+
 /* este codigo elimina el borde del formulario */
-.formulario fieldset{
+.formulario fieldset {
 
     border: none;
 }
 
-.formulario legend{
+.formulario legend {
     text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--primario);
+}
+
+.contenedor-campos {}
+
+.campo {
+
+    margin-bottom: 1rem;
+
+
+}
+
+.campo label {
+
+
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+
+}
+
+.input-text {
+
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+
+}
+
+.enviar .boton {
+
+    width: 100%;
 }
